@@ -139,9 +139,9 @@ document
       
     }
 
-    // if ( word.length === wordLetter.length) {
-    //   alert("Congrats! You Win!!");
-    // }
+    if ( word.length == document.querySelectorAll(".show").length) {
+      alert("Congrats! You Win!!");
+    }
     // 5. just keep the "event" to child element
     event.stopPropagation();
   });
