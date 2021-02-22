@@ -7,5 +7,5 @@ It's very simple to use. Try and guess the word. For every correct letter you cl
 ## What I've used
 I have used HTML, and SCSS for design. I have also used Javascript to make everything work correctly. I have used lots of different types of functions. My level with Javascript is still very new. I have not done any testing yet.
 
-![] (images/screenshot1.png)
-![] (images/screenshot2.pgn)
+![SS1] (./images/screenshot1.png)
+![SS2] (./images/screenshot2.png)
