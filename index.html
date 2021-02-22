@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" async defer></script>
+  <title>Hangman Game</title>
+</head>
+<body>
+  <nav>
+    <h1 id="title">Hangman</h1>
+  </nav>
+  <main>
+    <button id="restartButton">Restart</button>
+  <div class="background">
+  <section id="game-area">
+    <button id="button">Start Game!</button>
+    <div class="hangman"></div>
+      <img src="images/imageedit_5_3171897839.png" id="image">
+      <div id="lives">Lives: <span id="livesCounter">10</span></div>
+      <div id="drawing">
+        <div id="bottomBase"></div>
+        <div id="stand"></div>
+        <div id="topOfStand"></div>
+        <div id="noose"></div>
+        <div id="head"></div>
+        <div id="body"></div>
+        <div id="rightArm"></div>
+        <div id="leftArm"></div>
+        <div id="rightLeg"></div>
+        <div id="leftLeg"></div>
+        <div class="extra"></div>
+      </div>
+    <div class="wordGuess">
+      <div id="wordSpaces">
+        <div id="hiddenLetter"></div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="alphabet">
+    <div class="startGame"></div>
+    <div id="rules">
+      <h2>How to Play</h2>
+      <ul>
+        <li>1. Choose a letter from the alphabet</li>
+        <li>2. If the letter is in the word, choose another letter</li>
+        <li>3. If the letter is not in the word, a portion of the hangman is added</li>
+        <li>4. If you guess the word, you <span>WIN!</span> or if the hangman is complete, you <span>LOSE!</span></li>
+      </ul>
+    </div>
+    <div id="alphabetKeyboard" class="hide">
+    <div class="first-letter-containers">
+      <div id="A" class="letterBox">A</div>
+      <div id="B" class="letterBox">B</div>
+      <div id="C" class="letterBox">C</div>
+      <div id="D" class="letterBox">D</div>
+      <div id="E" class="letterBox">E</div>
+      <div id="F" class="letterBox">F</div>
+      <div id="G" class="letterBox">G</div>
+      <div id="H" class="letterBox">H</div>
+      <div id="I" class="letterBox">I</div>
+    </div>
+    <div class="second-letter-containers"> 
+      <div id="J" class="letterBox">J</div>
+      <div id="K" class="letterBox">K</div>
+      <div id="L" class="letterBox">L</div>
+      <div id="M" class="letterBox">M</div>
+      <div id="N" class="letterBox">N</div>
+      <div id="O" class="letterBox">O</div>
+      <div id="P" class="letterBox">P</div>
+      <div id="Q" class="letterBox">Q</div>
+      <div id="R" class="letterBox">R</div>
+      <div id="S" class="letterBox">S</div>
+    </div> 
+    <div class="third-letter-containers">
+      <div id="T" class="letterBox">T</div>
+      <div id="U" class="letterBox">U</div>
+      <div id="V" class="letterBox">V</div>
+      <div id="W" class="letterBox">W</div>
+      <div id="X" class="letterBox">X</div>
+      <div id="Y" class="letterBox">Y</div>
+      <div id="Z" class="letterBox">Z</div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+  </section>
+</div>
+  </main>
+</body>
+</html>
