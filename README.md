@@ -10,6 +10,13 @@ I have used HTML, and SCSS for design. I have also used Javascript to make every
 <img width="1133" alt="screenshot1" src="https://user-images.githubusercontent.com/77341937/108767333-3ad70100-754e-11eb-821b-35e62b38fdf8.png">
 <img width="1209" alt="screenshot2" src="https://user-images.githubusercontent.com/77341937/108767494-6ce86300-754e-11eb-91e5-8d02097897be.png">
 
+## Testing
+At the moment I have not done any testing. I will be doing some unit testing soon.
+
+## What I'd like to add
+I would like to add animation of the letters and the drawing of the hangman look like it is being hand drawn in chalk.
+I would also like to add a next word button, if you guess the correct word and as the game reloads an animation of a eraser erases everything out.
+
 ### License
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007

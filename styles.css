@@ -131,10 +131,10 @@ nav h1 {
 }
 #game-area .extra {
   background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 55px;
-  height: 55px;
+  width: 57px;
+  height: 57px;
   position: absolute;
-  left: 202px;
+  left: 200px;
   top: 101px;
 }
 #game-area img {
