@@ -15,12 +15,10 @@ nav {
   display: flex;
   justify-content: center;
   height: 100px;
-  margin-top: 15px;
 }
 nav h1 {
   font-size: 85px;
   font-family: chalkDusterFont;
-  text-decoration: underline;
   color: whitesmoke;
   padding: 10px;
   border-radius: 10px;
@@ -33,97 +31,118 @@ nav h1 {
   justify-content: space-evenly;
   align-items: flex-end;
 }
+#game-area #winner {
+  color: whitesmoke;
+  font-family: chalkDusterFont;
+  font-size: 30px;
+  position: absolute;
+  top: 60px;
+  right: 300px;
+}
+#game-area #loser {
+  color: whitesmoke;
+  font-family: chalkDusterFont;
+  font-size: 30px;
+  position: absolute;
+  top: 60px;
+  right: 300px;
+}
 #game-area #bottomBase {
   background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 140px;
+  width: 110px;
   height: 15px;
   position: absolute;
-  left: 140px;
-  top: 360px;
+  left: 150px;
+  top: 348px;
 }
 #game-area #stand {
   background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
   width: 15px;
-  height: 330px;
+  height: 260px;
   position: absolute;
-  left: 205px;
-  top: 30px;
+  left: 187px;
+  top: 88px;
 }
 #game-area #topOfStand {
   background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 240px;
+  width: 200px;
   height: 15px;
   position: absolute;
-  left: 165px;
-  top: 35px;
+  left: 169px;
+  top: 90px;
 }
 #game-area #noose {
   background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
   width: 15px;
-  height: 80px;
+  height: 50px;
   position: absolute;
-  left: 386px;
-  top: 35px;
+  left: 330px;
+  top: 102px;
 }
 #game-area #head {
   background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 140px;
-  height: 95px;
+  width: 95px;
+  height: 73px;
   position: absolute;
-  left: 310px;
-  top: 110px;
+  left: 293px;
+  top: 150px;
 }
 #game-area #body {
   background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
   width: 15px;
-  height: 110px;
+  height: 85px;
   position: absolute;
-  left: 387px;
-  top: 205px;
+  left: 330px;
+  top: 221px;
 }
 #game-area #rightArm {
   background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 45px;
   position: absolute;
-  left: 402px;
-  top: 200px;
+  left: 345px;
+  top: 235px;
 }
 #game-area #leftArm {
   background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 75px;
-  height: 75px;
+  width: 55px;
+  height: 35px;
   position: absolute;
-  left: 312px;
-  top: 200px;
+  left: 279px;
+  top: 235px;
 }
 #game-area #rightLeg {
   background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 75px;
+  width: 45px;
   height: 65px;
   position: absolute;
-  left: 400px;
-  top: 295px;
+  left: 350px;
+  top: 285px;
+  transform: rotate(-47deg);
 }
 #game-area #leftLeg {
   background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 75px;
+  width: 45px;
   height: 65px;
   position: absolute;
-  left: 316px;
-  top: 295px;
+  left: 285px;
+  top: 285px;
+  transform: rotate(47deg);
 }
 #game-area .extra {
   background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 85px;
-  height: 85px;
+  width: 55px;
+  height: 55px;
   position: absolute;
-  left: 219px;
-  top: 50px;
+  left: 202px;
+  top: 101px;
 }
 #game-area img {
   position: absolute;
   left: 123px;
+  top: 75px;
+  width: 300px;
+  height: 300px;
 }
 #game-area #lives {
   color: whitesmoke;

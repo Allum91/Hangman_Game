@@ -3,6 +3,7 @@ document.getElementById("image").classList.add("hide");
 document.getElementById("wordSpaces").classList.add("hide");
 document.getElementById("lives").classList.add("hide");
 document.getElementById("restartButton").classList.add("hide");
+document.getElementById("winner").classList.add("hide");
 
 const startButton = document.getElementById("button");
 
@@ -110,9 +111,9 @@ document
       document.getElementById("livesCounter").innerHTML = lives;
       // 3. When the lives counter gets to 0, it's game over
       if (lives <= 0) {
-        alert("You Lose! Game Over");
-        
-      } 
+        document.getElementById("loser").classList.remove("hide");
+        document.getElementById("loser").innerHTML = `<h2>Unlucky! You Hang!</h2><br><br><h5>Press Restart to play again</h5>`
+      }
 
       // 4. Drawing needs to add a limb (Place divs on top and reveal them with every wrong answer)
       if (lives == 9) {
@@ -136,19 +137,32 @@ document
       } else if (lives == 0) {
         document.getElementById("leftLeft").classList.add("hide");
       }
-      
-    }
 
-    if ( word.length == document.querySelectorAll(".show").length) {
-      alert("Congrats! You Win!!");
     }
-    // 5. just keep the "event" to child element
+    // 5.  Need a winner section once the word is complete
+    if (word.length <= document.querySelectorAll(".show").length) {
+      console.log("win");
+      document.getElementById("winner").classList.remove("hide");
+      document.getElementById("winner").innerHTML = `<h2>Congrats! you WIN!!</h2><br><h5>Press restart to play again</h5>`
+      
+      const myCanvas = document.getElementById("my-canvas");
+
+      const myConfetti = confetti.create(myCanvas, {
+      resize: true,
+      useWorker: true
+      });
+      myConfetti({
+        particleCount: 600,
+        spread: 250
+  // any other options from the global
+  // confetti function
+});
+    }
+    // 6. just keep the "event" to child element
     event.stopPropagation();
   });
-// 6. Need a restart button
+// 7. Need a restart button
 document.getElementById("restartButton").addEventListener("click", () => {
   location.reload();
 });
-
-// 7.  Need a winner section once the word is complete
 
