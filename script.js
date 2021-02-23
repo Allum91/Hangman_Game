@@ -135,9 +135,8 @@ document
       } else if (lives == 1) {
         document.getElementById("rightLeg").classList.add("hide");
       } else if (lives == 0) {
-        document.getElementById("leftLeft").classList.add("hide");
+        document.getElementById("leftLeg").classList.add("hide");
       }
-
     }
     // 5.  Need a winner section once the word is complete
     if (word.length <= document.querySelectorAll(".show").length) {
@@ -146,17 +145,14 @@ document
       document.getElementById("winner").innerHTML = `<h2>Congrats! you WIN!!</h2><br><h5>Press restart to play again</h5>`
       
       const myCanvas = document.getElementById("my-canvas");
-
       const myConfetti = confetti.create(myCanvas, {
       resize: true,
       useWorker: true
       });
       myConfetti({
-        particleCount: 600,
+        particleCount: 500,
         spread: 250
-  // any other options from the global
-  // confetti function
-});
+    });
     }
     // 6. just keep the "event" to child element
     event.stopPropagation();
