@@ -7,520 +7,2087 @@
   padding: 0;
 }
 
-body {
-  background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-}
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  body {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+  }
 
-nav {
-  display: flex;
-  justify-content: center;
-  height: 100px;
-}
-nav h1 {
-  font-size: 85px;
-  font-family: chalkDusterFont;
-  color: whitesmoke;
-  padding: 10px;
-  border-radius: 10px;
-}
+  nav {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+  }
+  nav h1 {
+    font-size: 65px;
+    font-family: chalkDusterFont;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+  }
 
-#game-area {
-  width: 100vw;
-  height: 40vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-end;
-}
-#game-area #winner {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 30px;
-  position: absolute;
-  top: 60px;
-  right: 300px;
-}
-#game-area #loser {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 30px;
-  position: absolute;
-  top: 60px;
-  right: 300px;
-}
-#game-area #bottomBase {
-  background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 110px;
-  height: 15px;
-  position: absolute;
-  left: 150px;
-  top: 348px;
-}
-#game-area #stand {
-  background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 15px;
-  height: 260px;
-  position: absolute;
-  left: 187px;
-  top: 88px;
-}
-#game-area #topOfStand {
-  background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 200px;
-  height: 15px;
-  position: absolute;
-  left: 169px;
-  top: 90px;
-}
-#game-area #noose {
-  background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 15px;
-  height: 50px;
-  position: absolute;
-  left: 330px;
-  top: 102px;
-}
-#game-area #head {
-  background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 95px;
-  height: 73px;
-  position: absolute;
-  left: 293px;
-  top: 150px;
-}
-#game-area #body {
-  background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 15px;
-  height: 85px;
-  position: absolute;
-  left: 330px;
-  top: 221px;
-}
-#game-area #rightArm {
-  background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 50px;
-  height: 45px;
-  position: absolute;
-  left: 345px;
-  top: 235px;
-}
-#game-area #leftArm {
-  background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 55px;
-  height: 35px;
-  position: absolute;
-  left: 279px;
-  top: 235px;
-}
-#game-area #rightLeg {
-  background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 45px;
-  height: 65px;
-  position: absolute;
-  left: 350px;
-  top: 285px;
-  transform: rotate(-47deg);
-}
-#game-area #leftLeg {
-  background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 45px;
-  height: 65px;
-  position: absolute;
-  left: 285px;
-  top: 285px;
-  transform: rotate(47deg);
-}
-#game-area .extra {
-  background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
-  width: 57px;
-  height: 57px;
-  position: absolute;
-  left: 200px;
-  top: 101px;
-}
-#game-area img {
-  position: absolute;
-  left: 123px;
-  top: 75px;
-  width: 300px;
-  height: 300px;
-}
-#game-area #lives {
-  color: whitesmoke;
-  font-size: 20px;
-  font-family: chalkDusterFont;
-}
-#game-area #livesCounter {
-  color: whitesmoke;
-  font-size: 20px;
-  font-family: chalkDusterFont;
-}
-#game-area .wordGuess {
-  display: inline-block;
-}
-#game-area .wordGuess #wordSpaces {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  text-align: center;
-  font-size: 32px;
-  margin-right: 125px;
-}
-#game-area .wordGuess .whiteBottom {
-  display: inline-block;
-  border-bottom: 5px solid whitesmoke;
-  width: 45px;
-  border-radius: 5px;
-  margin-right: 15px;
-}
+  #game-area {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+  #game-area #winner {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 30px;
+    position: absolute;
+    top: 60px;
+    right: 300px;
+  }
+  #game-area #loser {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 30px;
+    position: absolute;
+    top: 60px;
+    right: 300px;
+  }
+  #game-area #bottomBase {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 60px;
+    height: 8px;
+    position: absolute;
+    left: 30px;
+    top: 190px;
+  }
+  #game-area #stand {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 8px;
+    height: 123px;
+    position: absolute;
+    left: 52px;
+    top: 67px;
+  }
+  #game-area #topOfStand {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 120px;
+    height: 8px;
+    position: absolute;
+    left: 45px;
+    top: 62px;
+  }
+  #game-area #noose {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 8px;
+    height: 28px;
+    position: absolute;
+    left: 125px;
+    top: 65px;
+  }
+  #game-area #head {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    left: 110px;
+    top: 90px;
+  }
+  #game-area #body {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 8px;
+    height: 40px;
+    position: absolute;
+    left: 125px;
+    top: 128px;
+  }
+  #game-area #rightArm {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    left: 132px;
+    top: 130px;
+  }
+  #game-area #leftArm {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    left: 95px;
+    top: 130px;
+  }
+  #game-area #rightLeg {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 10px;
+    height: 35px;
+    position: absolute;
+    left: 138px;
+    top: 165px;
+    transform: rotate(-40deg);
+  }
+  #game-area #leftLeg {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 10px;
+    height: 35px;
+    position: absolute;
+    left: 115px;
+    top: 160px;
+    transform: rotate(47deg);
+  }
+  #game-area .extra {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 60px;
+    top: 69px;
+  }
+  #game-area img {
+    position: absolute;
+    left: 20px;
+    top: 55px;
+    width: 150px;
+    height: 150px;
+  }
+  #game-area #lives {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: chalkDusterFont;
+    position: fixed;
+    right: 50px;
+    top: 100px;
+  }
+  #game-area #livesCounter {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: chalkDusterFont;
+  }
+  #game-area .wordGuess {
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+  }
+  #game-area .wordGuess #wordSpaces {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    text-align: center;
+    font-size: 25px;
+    margin-right: 10px;
+  }
+  #game-area .wordGuess .whiteBottom {
+    display: inline-block;
+    border-bottom: 5px solid whitesmoke;
+    width: 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
 
-.hide {
-  color: transparent;
-}
+  .hide {
+    color: transparent;
+  }
 
-.show {
-  color: whitesmoke;
-}
+  .show {
+    color: whitesmoke;
+  }
 
-.crossOut {
-  opacity: 0.3;
-}
+  #gameOver {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0%;
+    height: 0%;
+    background: #ffe346;
+    color: black;
+    font-family: chalkDusterFont;
+    font-size: 24px;
+    border: 3px solid black;
+    border-radius: 10px;
+  }
 
-#gameOver {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  width: 0%;
-  height: 0%;
-  background: #ffe346;
-  color: black;
-  font-family: chalkDusterFont;
-  font-size: 24px;
-  border: 3px solid black;
-  border-radius: 10px;
-}
+  #restartButton {
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    background: #ffe346;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
 
-#restartButton {
-  height: 40px;
-  width: 100px;
-  font-size: 18px;
-  background: #ffe346;
-  border: 2px solid black;
-  border-radius: 10px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
+  button {
+    height: 75px;
+    width: 250px;
+    font-size: 30px;
+    background: #ffe346;
+    position: absolute;
+    top: 200px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-family: chalkDusterFont;
+    z-index: 10;
+  }
 
-button {
-  height: 75px;
-  width: 400px;
-  font-size: 50px;
-  background: #ffe346;
-  position: absolute;
-  top: 250px;
-  border-radius: 10px;
-  border: 2px solid black;
-  font-family: chalkDusterFont;
-}
+  #button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.2);
+    transition: 1s;
+  }
 
-#button:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  transform: scale(1.2);
-  transition: 1s;
-}
+  #rules {
+    color: black;
+    background: #f5df63;
+    border: 2px solid black;
+    text-align: left;
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 12px;
+    margin: auto;
+    width: 60vw;
+    font-family: chalkDusterFont;
+  }
+  #rules h2 {
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: chalkDusterFont;
+  }
+  #rules ul {
+    list-style-type: none;
+    margin-left: 20px;
+  }
+  #rules span {
+    text-decoration: underline;
+    font-weight: bold;
+  }
 
-#rules {
-  color: black;
-  background: #f5df63;
-  border: 2px solid black;
-  text-align: left;
-  line-height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 20px;
-  margin: auto;
-  width: 60vw;
-  font-family: chalkDusterFont;
-}
-#rules h2 {
-  text-decoration: underline;
-  text-align: center;
-  margin-bottom: 5px;
-  font-family: chalkDusterFont;
-}
-#rules ul {
-  list-style-type: none;
-  margin-left: 20px;
-}
-#rules span {
-  text-decoration: underline;
-  font-weight: bold;
-}
+  #alphabetKeyboard {
+    margin-top: 20px;
+  }
+  #alphabetKeyboard .first-letter-containers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #alphabetKeyboard .second-letter-containers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #alphabetKeyboard .third-letter-containers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #alphabetKeyboard #A {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #B {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #C {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #D {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #E {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #F {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #G {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #H {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #I {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #J {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #K {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #L {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #M {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #N {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #O {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #P {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #Q {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #R {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #S {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #T {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #U {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #V {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #W {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #X {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #Y {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  #alphabetKeyboard #Z {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
 
-#alphabetKeyboard {
-  margin-top: 100px;
+  .letterBox:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+  }
 }
-#alphabetKeyboard .first-letter-containers {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-#alphabetKeyboard .second-letter-containers {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-#alphabetKeyboard .third-letter-containers {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-#alphabetKeyboard #A {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #B {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #C {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #D {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #E {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #F {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #G {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #H {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #I {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #J {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #K {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #L {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #M {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #N {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #O {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #P {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #Q {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #R {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #S {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #T {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #U {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #V {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #W {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #X {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #Y {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
-#alphabetKeyboard #Z {
-  color: whitesmoke;
-  font-family: chalkDusterFont;
-  font-size: 32px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 15px;
-}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  body {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+  }
 
-.letterBox:hover {
-  cursor: pointer;
-  transform: scale(1.3);
-}
+  nav {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+  }
+  nav h1 {
+    font-size: 65px;
+    font-family: chalkDusterFont;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+  }
 
-.hide {
-  display: none;
+  #game-area {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+  #game-area #winner {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 30px;
+    position: absolute;
+    top: 60px;
+    right: 300px;
+  }
+  #game-area #loser {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 25px;
+    position: absolute;
+    top: 60px;
+    right: 100px;
+  }
+  #game-area #bottomBase {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 110px;
+    height: 15px;
+    position: absolute;
+    left: 30px;
+    top: 298px;
+  }
+  #game-area #stand {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 15px;
+    height: 220px;
+    position: absolute;
+    left: 78px;
+    top: 80px;
+  }
+  #game-area #topOfStand {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 150px;
+    height: 15px;
+    position: absolute;
+    left: 85px;
+    top: 85px;
+  }
+  #game-area #noose {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 15px;
+    height: 40px;
+    position: absolute;
+    left: 195px;
+    top: 98px;
+  }
+  #game-area #head {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 85px;
+    height: 73px;
+    position: absolute;
+    left: 160px;
+    top: 125px;
+  }
+  #game-area #body {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 15px;
+    height: 70px;
+    position: absolute;
+    left: 195px;
+    top: 190px;
+  }
+  #game-area #rightArm {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    left: 205px;
+    top: 200px;
+  }
+  #game-area #leftArm {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 55px;
+    height: 35px;
+    position: absolute;
+    left: 155px;
+    top: 200px;
+  }
+  #game-area #rightLeg {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 40px;
+    height: 55px;
+    position: absolute;
+    left: 200px;
+    top: 245px;
+    transform: rotate(-47deg);
+  }
+  #game-area #leftLeg {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 40px;
+    height: 55px;
+    position: absolute;
+    left: 155px;
+    top: 250px;
+    transform: rotate(47deg);
+  }
+  #game-area .extra {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 55px;
+    height: 45px;
+    position: absolute;
+    left: 80px;
+    top: 95px;
+  }
+  #game-area img {
+    position: absolute;
+    left: 23px;
+    top: 75px;
+    width: 250px;
+    height: 250px;
+  }
+  #game-area #lives {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: chalkDusterFont;
+    position: fixed;
+    right: 50px;
+  }
+  #game-area #livesCounter {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: chalkDusterFont;
+  }
+  #game-area .wordGuess {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 40%;
+  }
+  #game-area .wordGuess #wordSpaces {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    text-align: center;
+    font-size: 26px;
+    margin-right: 35px;
+  }
+  #game-area .wordGuess .whiteBottom {
+    display: inline-block;
+    border-bottom: 5px solid whitesmoke;
+    width: 35px;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+
+  .hide {
+    color: transparent;
+  }
+
+  .show {
+    color: whitesmoke;
+  }
+
+  .crossOut {
+    opacity: 0.3;
+  }
+
+  #gameOver {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0%;
+    height: 0%;
+    background: #ffe346;
+    color: black;
+    font-family: chalkDusterFont;
+    font-size: 24px;
+    border: 3px solid black;
+    border-radius: 10px;
+  }
+
+  #restartButton {
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    background: #ffe346;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  button {
+    height: 75px;
+    width: 350px;
+    font-size: 40px;
+    background: #ffe346;
+    position: absolute;
+    top: 350px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-family: chalkDusterFont;
+  }
+
+  #button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.2);
+    transition: 1s;
+  }
+
+  #rules {
+    color: black;
+    background: #f5df63;
+    border: 2px solid black;
+    text-align: left;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    margin: auto;
+    width: 60vw;
+    font-family: chalkDusterFont;
+  }
+  #rules h2 {
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: chalkDusterFont;
+  }
+  #rules ul {
+    list-style-type: none;
+    margin-left: 20px;
+  }
+  #rules span {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  #alphabetKeyboard {
+    margin-top: 20px;
+  }
+  #alphabetKeyboard .first-letter-containers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #alphabetKeyboard .second-letter-containers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #alphabetKeyboard .third-letter-containers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #alphabetKeyboard #A {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #B {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #C {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #D {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #E {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #F {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #G {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #H {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #I {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #J {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #K {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #L {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #M {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #N {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #O {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #P {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #Q {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #R {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #S {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #T {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #U {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #V {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #W {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #X {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #Y {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #Z {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  .letterBox:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+  }
+
+  .hide {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  body {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+  }
+  nav h1 {
+    font-size: 65px;
+    font-family: chalkDusterFont;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  #game-area {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+  #game-area #winner {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 30px;
+    position: absolute;
+    top: 60px;
+    right: 300px;
+  }
+  #game-area #loser {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 25px;
+    position: absolute;
+    top: 60px;
+    right: 200px;
+  }
+  #game-area #bottomBase {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 110px;
+    height: 15px;
+    position: absolute;
+    left: 30px;
+    top: 298px;
+  }
+  #game-area #stand {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 15px;
+    height: 220px;
+    position: absolute;
+    left: 78px;
+    top: 80px;
+  }
+  #game-area #topOfStand {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 150px;
+    height: 15px;
+    position: absolute;
+    left: 85px;
+    top: 85px;
+  }
+  #game-area #noose {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 15px;
+    height: 40px;
+    position: absolute;
+    left: 195px;
+    top: 98px;
+  }
+  #game-area #head {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 85px;
+    height: 73px;
+    position: absolute;
+    left: 160px;
+    top: 125px;
+  }
+  #game-area #body {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 15px;
+    height: 70px;
+    position: absolute;
+    left: 195px;
+    top: 190px;
+  }
+  #game-area #rightArm {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    left: 205px;
+    top: 200px;
+  }
+  #game-area #leftArm {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 55px;
+    height: 35px;
+    position: absolute;
+    left: 155px;
+    top: 200px;
+  }
+  #game-area #rightLeg {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 40px;
+    height: 55px;
+    position: absolute;
+    left: 200px;
+    top: 245px;
+    transform: rotate(-47deg);
+  }
+  #game-area #leftLeg {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 40px;
+    height: 55px;
+    position: absolute;
+    left: 155px;
+    top: 250px;
+    transform: rotate(47deg);
+  }
+  #game-area .extra {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 55px;
+    height: 45px;
+    position: absolute;
+    left: 85px;
+    top: 98px;
+  }
+  #game-area img {
+    position: absolute;
+    left: 23px;
+    top: 75px;
+    width: 250px;
+    height: 250px;
+  }
+  #game-area #lives {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: chalkDusterFont;
+    position: fixed;
+    right: 50px;
+  }
+  #game-area #livesCounter {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: chalkDusterFont;
+  }
+  #game-area .wordGuess {
+    display: inline-block;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+  }
+  #game-area .wordGuess #wordSpaces {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    text-align: center;
+    font-size: 32px;
+    margin-right: 125px;
+  }
+  #game-area .wordGuess .whiteBottom {
+    display: inline-block;
+    border-bottom: 5px solid whitesmoke;
+    width: 45px;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+
+  .hide {
+    color: transparent;
+  }
+
+  .show {
+    color: whitesmoke;
+  }
+
+  .crossOut {
+    opacity: 0.3;
+  }
+
+  #gameOver {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0%;
+    height: 0%;
+    background: #ffe346;
+    color: black;
+    font-family: chalkDusterFont;
+    font-size: 24px;
+    border: 3px solid black;
+    border-radius: 10px;
+  }
+
+  #restartButton {
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    background: #ffe346;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  button {
+    height: 75px;
+    width: 350px;
+    font-size: 40px;
+    background: #ffe346;
+    position: absolute;
+    top: 150px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-family: chalkDusterFont;
+  }
+
+  #button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.2);
+    transition: 1s;
+  }
+
+  #rules {
+    color: black;
+    background: #f5df63;
+    border: 2px solid black;
+    text-align: left;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    margin: auto;
+    width: 60vw;
+    font-family: chalkDusterFont;
+  }
+  #rules h2 {
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: chalkDusterFont;
+  }
+  #rules ul {
+    list-style-type: none;
+    margin-left: 20px;
+  }
+  #rules span {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  #alphabetKeyboard {
+    margin-top: 20px;
+  }
+  #alphabetKeyboard .first-letter-containers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #alphabetKeyboard .second-letter-containers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #alphabetKeyboard .third-letter-containers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #alphabetKeyboard #A {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #B {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #C {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #D {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #E {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #F {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #G {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #H {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #I {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #J {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #K {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #L {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #M {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #N {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #O {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #P {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #Q {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #R {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #S {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #T {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #U {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #V {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #W {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #X {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #Y {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #Z {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  .letterBox:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+  }
+
+  .hide {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 2600px) {
+  body {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+  }
+  nav h1 {
+    font-size: 85px;
+    font-family: chalkDusterFont;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  #game-area {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+  #game-area #winner {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 30px;
+    position: absolute;
+    top: 60px;
+    right: 300px;
+  }
+  #game-area #loser {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 30px;
+    position: absolute;
+    top: 60px;
+    right: 300px;
+  }
+  #game-area #bottomBase {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 110px;
+    height: 15px;
+    position: absolute;
+    left: 150px;
+    top: 348px;
+  }
+  #game-area #stand {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 15px;
+    height: 260px;
+    position: absolute;
+    left: 187px;
+    top: 88px;
+  }
+  #game-area #topOfStand {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 200px;
+    height: 15px;
+    position: absolute;
+    left: 169px;
+    top: 90px;
+  }
+  #game-area #noose {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 15px;
+    height: 50px;
+    position: absolute;
+    left: 330px;
+    top: 102px;
+  }
+  #game-area #head {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 95px;
+    height: 73px;
+    position: absolute;
+    left: 293px;
+    top: 150px;
+  }
+  #game-area #body {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 15px;
+    height: 85px;
+    position: absolute;
+    left: 330px;
+    top: 221px;
+  }
+  #game-area #rightArm {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    left: 345px;
+    top: 235px;
+  }
+  #game-area #leftArm {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 55px;
+    height: 35px;
+    position: absolute;
+    left: 279px;
+    top: 235px;
+  }
+  #game-area #rightLeg {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 45px;
+    height: 65px;
+    position: absolute;
+    left: 350px;
+    top: 285px;
+    transform: rotate(-47deg);
+  }
+  #game-area #leftLeg {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 45px;
+    height: 65px;
+    position: absolute;
+    left: 285px;
+    top: 285px;
+    transform: rotate(47deg);
+  }
+  #game-area .extra {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    left: 200px;
+    top: 101px;
+  }
+  #game-area img {
+    position: absolute;
+    left: 123px;
+    top: 75px;
+    width: 300px;
+    height: 300px;
+  }
+  #game-area #lives {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: chalkDusterFont;
+  }
+  #game-area #livesCounter {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: chalkDusterFont;
+  }
+  #game-area .wordGuess {
+    display: inline-block;
+  }
+  #game-area .wordGuess #wordSpaces {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    text-align: center;
+    font-size: 32px;
+    margin-right: 125px;
+  }
+  #game-area .wordGuess .whiteBottom {
+    display: inline-block;
+    border-bottom: 5px solid whitesmoke;
+    width: 45px;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+
+  .hide {
+    color: transparent;
+  }
+
+  .show {
+    color: whitesmoke;
+  }
+
+  .crossOut {
+    opacity: 0.3;
+  }
+
+  #gameOver {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0%;
+    height: 0%;
+    background: #ffe346;
+    color: black;
+    font-family: chalkDusterFont;
+    font-size: 24px;
+    border: 3px solid black;
+    border-radius: 10px;
+  }
+
+  #restartButton {
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    background: #ffe346;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  button {
+    height: 75px;
+    width: 400px;
+    font-size: 50px;
+    background: #ffe346;
+    position: absolute;
+    top: 250px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-family: chalkDusterFont;
+  }
+
+  #button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.2);
+    transition: 1s;
+  }
+
+  #rules {
+    color: black;
+    background: #f5df63;
+    border: 2px solid black;
+    text-align: left;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    margin: auto;
+    width: 60vw;
+    font-family: chalkDusterFont;
+  }
+  #rules h2 {
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: chalkDusterFont;
+  }
+  #rules ul {
+    list-style-type: none;
+    margin-left: 20px;
+  }
+  #rules span {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  #alphabetKeyboard {
+    margin-top: 100px;
+  }
+  #alphabetKeyboard .first-letter-containers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #alphabetKeyboard .second-letter-containers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #alphabetKeyboard .third-letter-containers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #alphabetKeyboard #A {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #B {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #C {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #D {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #E {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #F {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #G {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #H {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #I {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #J {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #K {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #L {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #M {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #N {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #O {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #P {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #Q {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #R {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #S {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #T {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #U {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #V {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #W {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #X {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #Y {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  #alphabetKeyboard #Z {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  .letterBox:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+  }
+
+  .hide {
+    display: none;
+  }
 }

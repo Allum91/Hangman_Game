@@ -112,7 +112,7 @@ document
       // 3. When the lives counter gets to 0, it's game over
       if (lives <= 0) {
         document.getElementById("loser").classList.remove("hide");
-        document.getElementById("loser").innerHTML = `<h2>Unlucky! You Hang!</h2><br><br><h5>Press Restart to play again</h5>`
+        document.getElementById("loser").innerHTML = `<h2>Unlucky! You Hang!</h2><br><br><h5>Press Restart to play again</h5>`;
       }
 
       // 4. Drawing needs to add a limb (Place divs on top and reveal them with every wrong answer)
@@ -136,6 +136,7 @@ document
         document.getElementById("rightLeg").classList.add("hide");
       } else if (lives == 0) {
         document.getElementById("leftLeg").classList.add("hide");
+        document.getElementById("wordSpaces").classList.add("hide")
       }
     }
     // 5.  Need a winner section once the word is complete

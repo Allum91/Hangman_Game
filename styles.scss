@@ -8,6 +8,1834 @@
   padding: 0;
 }
 
+ @media screen and (min-width: 300px) and (max-width: 576px) {
+  body {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+  
+    h1 {
+      font-size: 65px;
+      font-family: chalkDusterFont;
+      color: whitesmoke;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+  
+  #game-area {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  
+    #winner {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 30px;
+      position: absolute;
+      top: 60px;
+      right: 300px;
+    }
+  
+    #loser {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 30px;
+      position: absolute;
+      top: 60px;
+      right: 300px;
+    }
+  
+  
+    #bottomBase {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 60px;
+      height: 8px;
+      position: absolute;
+      left: 30px;
+      top: 190px;
+    }
+  
+    #stand {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 8px;
+      height: 123px;
+      position: absolute;
+      left: 52px;
+      top: 67px;
+    }
+  
+    #topOfStand {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 120px;
+      height: 8px;
+      position: absolute;
+      left: 45px;
+      top: 62px;
+    }
+  
+    #noose {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 8px;
+      height: 28px;
+      position: absolute;
+      left: 125px;
+      top: 65px;
+  
+    }
+  
+    #head {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 38px;
+      height: 38px;
+      position: absolute;
+      left: 110px;
+      top: 90px;
+    }
+  
+    #body {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 8px;
+      height: 40px;
+      position: absolute;
+      left: 125px;
+      top: 128px;
+    }
+  
+    #rightArm {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 30px;
+      height: 25px;
+      position: absolute;
+      left: 132px;
+      top: 130px;
+    }
+  
+    #leftArm {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 30px;
+      height: 25px;
+      position: absolute;
+      left: 95px;
+      top: 130px;
+    }
+  
+    #rightLeg {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 10px;
+      height: 35px;
+      position: absolute;
+      left: 138px;
+      top: 165px;
+      transform: rotate(-40deg);
+    }
+  
+    #leftLeg {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 10px;
+      height: 35px;
+      position: absolute;
+      left: 115px;
+      top: 160px;
+      transform:rotate(47deg);
+    }
+  
+    .extra {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      left: 60px;
+      top: 69px;
+    }
+  
+    img {
+      position: absolute;
+      left: 20px;
+      top: 55px;
+      width: 150px;
+      height: 150px;
+    }
+  
+    #lives {
+      color: whitesmoke;
+      font-size: 20px;
+      font-family: chalkDusterFont;
+      position:fixed;
+      right: 50px;
+      top: 100px;
+    }
+  
+    #livesCounter {
+      color: whitesmoke;
+      font-size: 20px;
+      font-family: chalkDusterFont;
+    }
+  
+  
+    .wordGuess {
+      display: inline-block;
+      position: absolute;
+      left: 10%;
+      top: 40%;
+  
+      #wordSpaces {
+        color: whitesmoke;
+        font-family: chalkDusterFont;
+        text-align: center;
+        font-size: 25px;
+        margin-right: 10px;
+      }
+  
+      .whiteBottom {
+        display: inline-block;
+        border-bottom: 5px solid whitesmoke;
+        width: 25px;
+        border-radius: 5px;
+        margin-right: 10px
+      }
+    }
+  }
+  
+  .hide {
+    color: transparent;
+  }
+  
+  .show {
+    color: whitesmoke;
+  }
+  
+  // .crossOut {
+  //   opacity: 0.3;
+  // }
+  
+  #gameOver {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0%;
+    height: 0%;
+    background: rgb(255, 227, 70);
+    color: black;
+    font-family: chalkDusterFont;
+    font-size: 24px;
+    border: 3px solid black;
+    border-radius: 10px;
+  }
+  
+  #restartButton {
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    background: rgb(255, 227, 70);
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  button {
+    height: 75px;
+    width: 250px;
+    font-size: 30px;
+    background: rgb(255, 227, 70);
+    position: absolute;
+    top: 200px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-family: chalkDusterFont;
+    z-index: 10;
+  }
+  
+  #button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.2);
+    transition: 1s;
+  }
+  
+  #rules {
+    color: black;
+    background: rgb(245, 223, 99);
+    border: 2px solid black;
+    text-align: left;
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 12px;
+    margin: auto;
+    width: 60vw;
+    font-family: chalkDusterFont;
+  
+    h2 {
+      text-decoration: underline;
+      text-align: center;
+      margin-bottom: 5px;
+      font-family: chalkDusterFont;
+    }
+  
+    ul {
+      list-style-type: none;
+      margin-left: 20px;
+    }
+  
+  
+    span {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  }
+  
+  #alphabetKeyboard {
+    margin-top: 20px;
+  
+    .first-letter-containers {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+  
+    }
+  
+    .second-letter-containers {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    .third-letter-containers {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    #A {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #B {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #C {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #D {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #E {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #F {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #G {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #H {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #I {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #J {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #K {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #L {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #M {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #N {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #O {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #P {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #Q {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #R {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #S {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #T {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #U {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #V {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #W {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #X {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #Y {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    #Z {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  }
+  
+  .letterBox:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+  }
+  
+  // .hide {
+  //   display: none;
+  // }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  body {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+  
+    h1 {
+      font-size: 65px;
+      font-family: chalkDusterFont;
+      color: whitesmoke;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+  
+  #game-area {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  
+    #winner {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 30px;
+      position: absolute;
+      top: 60px;
+      right: 300px;
+    }
+  
+    #loser {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 25px;
+      position: absolute;
+      top: 60px;
+      right: 100px;
+    }
+  
+  
+    #bottomBase {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 110px;
+      height: 15px;
+      position: absolute;
+      left: 30px;
+      top: 298px;
+    }
+  
+    #stand {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 15px;
+      height: 220px;
+      position: absolute;
+      left: 78px;
+      top: 80px;
+    }
+  
+    #topOfStand {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 150px;
+      height: 15px;
+      position: absolute;
+      left: 85px;
+      top: 85px;
+    }
+  
+    #noose {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 15px;
+      height: 40px;
+      position: absolute;
+      left: 195px;
+      top: 98px;
+  
+    }
+  
+    #head {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 85px;
+      height: 73px;
+      position: absolute;
+      left: 160px;
+      top: 125px;
+    }
+  
+    #body {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 15px;
+      height: 70px;
+      position: absolute;
+      left: 195px;
+      top: 190px;
+    }
+  
+    #rightArm {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 50px;
+      height: 45px;
+      position: absolute;
+      left: 205px;
+      top: 200px;
+    }
+  
+    #leftArm {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 55px;
+      height: 35px;
+      position: absolute;
+      left: 155px;
+      top: 200px;
+    }
+  
+    #rightLeg {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 40px;
+      height: 55px;
+      position: absolute;
+      left: 200px;
+      top: 245px;
+      transform: rotate(-47deg);
+    }
+  
+    #leftLeg {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 40px;
+      height: 55px;
+      position: absolute;
+      left: 155px;
+      top: 250px;
+      transform:rotate(47deg);
+    }
+  
+    .extra {
+      background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+      width: 55px;
+      height: 45px;
+      position: absolute;
+      left: 80px;
+      top: 95px;
+    }
+  
+    img {
+      position: absolute;
+      left: 23px;
+      top: 75px;
+      width: 250px;
+      height: 250px;
+    }
+  
+    #lives {
+      color: whitesmoke;
+      font-size: 20px;
+      font-family: chalkDusterFont;
+      position:fixed;
+      right: 50px;
+    }
+  
+    #livesCounter {
+      color: whitesmoke;
+      font-size: 20px;
+      font-family: chalkDusterFont;
+    }
+  
+  
+    .wordGuess {
+      display: inline-block;
+      position: absolute;
+      right: 10px;
+      top: 40%;
+  
+      #wordSpaces {
+        color: whitesmoke;
+        font-family: chalkDusterFont;
+        text-align: center;
+        font-size: 26px;
+        margin-right: 35px;
+      }
+  
+      .whiteBottom {
+        display: inline-block;
+        border-bottom: 5px solid whitesmoke;
+        width: 35px;
+        border-radius: 5px;
+        margin-right: 15px
+      }
+    }
+  }
+  
+  .hide {
+    color: transparent;
+  }
+  
+  .show {
+    color: whitesmoke;
+  }
+  
+  .crossOut {
+    opacity: 0.3;
+  }
+  
+  #gameOver {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0%;
+    height: 0%;
+    background: rgb(255, 227, 70);
+    color: black;
+    font-family: chalkDusterFont;
+    font-size: 24px;
+    border: 3px solid black;
+    border-radius: 10px;
+  }
+  
+  #restartButton {
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    background: rgb(255, 227, 70);
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  button {
+    height: 75px;
+    width: 350px;
+    font-size: 40px;
+    background: rgb(255, 227, 70);
+    position: absolute;
+    top: 350px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-family: chalkDusterFont;
+  }
+  
+  #button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.2);
+    transition: 1s;
+  }
+  
+  #rules {
+    color: black;
+    background: rgb(245, 223, 99);
+    border: 2px solid black;
+    text-align: left;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    margin: auto;
+    width: 60vw;
+    font-family: chalkDusterFont;
+  
+    h2 {
+      text-decoration: underline;
+      text-align: center;
+      margin-bottom: 5px;
+      font-family: chalkDusterFont;
+    }
+  
+    ul {
+      list-style-type: none;
+      margin-left: 20px;
+    }
+  
+  
+    span {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  }
+  
+  #alphabetKeyboard {
+    margin-top: 20px;
+  
+    .first-letter-containers {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+  
+    }
+  
+    .second-letter-containers {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    .third-letter-containers {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    #A {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #B {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #C {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #D {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #E {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #F {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #G {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #H {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #I {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #J {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #K {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #L {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #M {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #N {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #O {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #P {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #Q {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #R {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #S {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #T {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #U {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #V {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #W {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #X {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #Y {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  
+    #Z {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      font-size: 32px;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+      margin-right: 15px;
+    }
+  }
+  
+  .letterBox:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+  }
+  
+  .hide {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1199px){
+body {
+  background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+
+  h1 {
+    font-size: 65px;
+    font-family: chalkDusterFont;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+#game-area {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+
+  #winner {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 30px;
+    position: absolute;
+    top: 60px;
+    right: 300px;
+  }
+
+  #loser {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 25px;
+    position: absolute;
+    top: 60px;
+    right: 200px;
+  }
+
+
+  #bottomBase {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 110px;
+    height: 15px;
+    position: absolute;
+    left: 30px;
+    top: 298px;
+  }
+
+  #stand {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 15px;
+    height: 220px;
+    position: absolute;
+    left: 78px;
+    top: 80px;
+  }
+
+  #topOfStand {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 150px;
+    height: 15px;
+    position: absolute;
+    left: 85px;
+    top: 85px;
+  }
+
+  #noose {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 15px;
+    height: 40px;
+    position: absolute;
+    left: 195px;
+    top: 98px;
+
+  }
+
+  #head {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 85px;
+    height: 73px;
+    position: absolute;
+    left: 160px;
+    top: 125px;
+  }
+
+  #body {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 15px;
+    height: 70px;
+    position: absolute;
+    left: 195px;
+    top: 190px;
+  }
+
+  #rightArm {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    left: 205px;
+    top: 200px;
+  }
+
+  #leftArm {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 55px;
+    height: 35px;
+    position: absolute;
+    left: 155px;
+    top: 200px;
+  }
+
+  #rightLeg {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 40px;
+    height: 55px;
+    position: absolute;
+    left: 200px;
+    top: 245px;
+    transform: rotate(-47deg);
+  }
+
+  #leftLeg {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 40px;
+    height: 55px;
+    position: absolute;
+    left: 155px;
+    top: 250px;
+    transform:rotate(47deg);
+  }
+
+  .extra {
+    background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
+    width: 55px;
+    height: 45px;
+    position: absolute;
+    left: 85px;
+    top: 98px;
+  }
+
+  img {
+    position: absolute;
+    left: 23px;
+    top: 75px;
+    width: 250px;
+    height: 250px;
+  }
+
+  #lives {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: chalkDusterFont;
+    position:fixed;
+    right: 50px;
+  }
+
+  #livesCounter {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: chalkDusterFont;
+  }
+
+
+  .wordGuess {
+    display: inline-block;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+
+    #wordSpaces {
+      color: whitesmoke;
+      font-family: chalkDusterFont;
+      text-align: center;
+      font-size: 32px;
+      margin-right: 125px;
+    }
+
+    .whiteBottom {
+      display: inline-block;
+      border-bottom: 5px solid whitesmoke;
+      width: 45px;
+      border-radius: 5px;
+      margin-right: 15px
+    }
+  }
+}
+
+.hide {
+  color: transparent;
+}
+
+.show {
+  color: whitesmoke;
+}
+
+.crossOut {
+  opacity: 0.3;
+}
+
+#gameOver {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0%;
+  height: 0%;
+  background: rgb(255, 227, 70);
+  color: black;
+  font-family: chalkDusterFont;
+  font-size: 24px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+#restartButton {
+  height: 40px;
+  width: 100px;
+  font-size: 18px;
+  background: rgb(255, 227, 70);
+  border: 2px solid black;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+button {
+  height: 75px;
+  width: 350px;
+  font-size: 40px;
+  background: rgb(255, 227, 70);
+  position: absolute;
+  top: 150px;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-family: chalkDusterFont;
+}
+
+#button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+#rules {
+  color: black;
+  background: rgb(245, 223, 99);
+  border: 2px solid black;
+  text-align: left;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  margin: auto;
+  width: 60vw;
+  font-family: chalkDusterFont;
+
+  h2 {
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: chalkDusterFont;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-left: 20px;
+  }
+
+
+  span {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
+
+#alphabetKeyboard {
+  margin-top: 20px;
+
+  .first-letter-containers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+  }
+
+  .second-letter-containers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .third-letter-containers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  #A {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #B {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #C {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #D {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #E {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #F {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #G {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #H {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #I {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #J {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #K {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #L {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #M {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #N {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #O {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #P {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #Q {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #R {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #S {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #T {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #U {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #V {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #W {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #X {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #Y {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+
+  #Z {
+    color: whitesmoke;
+    font-family: chalkDusterFont;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 15px;
+  }
+}
+
+.letterBox:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
+.hide {
+  display: none;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) and (max-width: 2600px) {
 body {
   background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
 }
@@ -581,4 +2409,5 @@ button {
 
 .hide {
   display: none;
+}
 }
