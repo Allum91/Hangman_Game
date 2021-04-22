@@ -1,4 +1,4 @@
-// document.getElementById("livesCounter").classList.add("hide");
+document.getElementById("livesCounter").classList.add("hide");
 document.getElementById("image").classList.add("hide");
 document.getElementById("wordSpaces").classList.add("hide");
 document.getElementById("lives").classList.add("hide");
