@@ -38,16 +38,30 @@
     font-family: chalkDusterFont;
     font-size: 30px;
     position: absolute;
-    top: 60px;
-    right: 300px;
+    width: 70vw;
+    height: 250px;
+    background: #ffe346;
+    text-align: center;
+    z-index: 10;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+    overflow: auto;
   }
   #game-area #loser {
     color: whitesmoke;
     font-family: chalkDusterFont;
-    font-size: 30px;
+    font-size: 20px;
     position: absolute;
-    top: 60px;
-    right: 300px;
+    width: 70vw;
+    height: 200px;
+    background: #ffe346;
+    text-align: center;
+    z-index: 10;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+    overflow: auto;
   }
   #game-area #bottomBase {
     background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
@@ -162,7 +176,7 @@
   #game-area .wordGuess {
     display: inline-block;
     position: absolute;
-    left: 10%;
+    left: 20%;
     top: 40%;
   }
   #game-area .wordGuess #wordSpaces {
@@ -563,16 +577,30 @@
     font-family: chalkDusterFont;
     font-size: 30px;
     position: absolute;
-    top: 60px;
-    right: 300px;
+    width: 70vw;
+    height: 250px;
+    background: #ffe346;
+    text-align: center;
+    z-index: 10;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+    overflow: auto;
   }
   #game-area #loser {
     color: whitesmoke;
     font-family: chalkDusterFont;
-    font-size: 25px;
+    font-size: 20px;
     position: absolute;
-    top: 60px;
-    right: 100px;
+    width: 60vw;
+    height: 150px;
+    background: #ffe346;
+    text-align: center;
+    z-index: 10;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+    overflow: auto;
   }
   #game-area #bottomBase {
     background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
@@ -1087,16 +1115,30 @@
     font-family: chalkDusterFont;
     font-size: 30px;
     position: absolute;
-    top: 60px;
-    right: 300px;
+    width: 70vw;
+    height: 250px;
+    background: #ffe346;
+    text-align: center;
+    z-index: 10;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+    overflow: auto;
   }
   #game-area #loser {
     color: whitesmoke;
     font-family: chalkDusterFont;
-    font-size: 25px;
+    font-size: 20px;
     position: absolute;
-    top: 60px;
-    right: 200px;
+    width: 50vw;
+    height: 150px;
+    background: #ffe346;
+    text-align: center;
+    z-index: 10;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+    overflow: auto;
   }
   #game-area #bottomBase {
     background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);
@@ -1611,16 +1653,30 @@
     font-family: chalkDusterFont;
     font-size: 30px;
     position: absolute;
-    top: 60px;
-    right: 300px;
+    width: 70vw;
+    height: 250px;
+    background: #ffe346;
+    text-align: center;
+    z-index: 10;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+    overflow: auto;
   }
   #game-area #loser {
     color: whitesmoke;
     font-family: chalkDusterFont;
-    font-size: 30px;
+    font-size: 20px;
     position: absolute;
-    top: 60px;
-    right: 300px;
+    width: 50vw;
+    height: 150px;
+    background: #ffe346;
+    text-align: center;
+    z-index: 10;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+    overflow: auto;
   }
   #game-area #bottomBase {
     background: url(images/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg);

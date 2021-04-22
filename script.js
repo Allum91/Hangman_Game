@@ -4,6 +4,7 @@ document.getElementById("wordSpaces").classList.add("hide");
 document.getElementById("lives").classList.add("hide");
 document.getElementById("restartButton").classList.add("hide");
 document.getElementById("winner").classList.add("hide");
+document.getElementById("loser").classList.add("hide");
 
 const startButton = document.getElementById("button");
 
@@ -44,7 +45,6 @@ let word = wordsToGuessArr[Math.floor(Math.random() * wordsToGuessArr.length)];
 
 // 3. Convert the random word into an array
 const wordLetter = word.split("");
-console.log(wordLetter);
 // 4. Loop over each letter in the word array
 wordLetter.forEach((letter) => {
   // 5. Put each letter in it's own div into the page
@@ -141,7 +141,6 @@ document
     }
     // 5.  Need a winner section once the word is complete
     if (word.length <= document.querySelectorAll(".show").length) {
-      console.log("win");
       document.getElementById("winner").classList.remove("hide");
       document.getElementById("winner").innerHTML = `<h2>Congrats! you WIN!!</h2><br><h5>Press restart to play again</h5>`
       
