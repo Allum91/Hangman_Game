@@ -11,7 +11,7 @@ I have used HTML, and SCSS for design. I have also used Javascript to make every
 <img width="1209" alt="screenshot2" src="https://user-images.githubusercontent.com/77341937/108767494-6ce86300-754e-11eb-91e5-8d02097897be.png">
 
 ## Testing
-At the moment I have not done any testing. I will be doing some unit testing soon.
+Some cypress testing has been started.
 
 ## What I'd like to add
 I would like to add animation of the letters and the drawing of the hangman look like it is being hand drawn in chalk.
