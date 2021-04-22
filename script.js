@@ -163,3 +163,4 @@ document.getElementById("restartButton").addEventListener("click", () => {
   location.reload();
 });
 
+// export default script;
